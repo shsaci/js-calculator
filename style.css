@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #972530;
+}
+
+#documentation {
+  color: #FFE4C4;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 150px;
+}
+
+.doc {
+  color: #FFE4C4;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 420px;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 75px;
+  height: 75px;
+  border: 1px #ccc dotted;
+  border-radius: 10%;
+  background-color: white;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  background: #ddd;
+  background-color: #FFEBD7;
+}
+
+.buttons:hover {
+  background: #efefef;
+}
+
+#screen {
+  height: 65px;
+  width: 420px;
+  font-size: 3rem;
+  font-weight: bolder;
+  border: 2px #ccc;
+  border-radius: 2%;
+  margin-top: 5px;
+  background-color: #efefef;
+  background-color: #FFFACD;
+  margin: 3px;
+  text-align: right;
+}
+
+a {
+  color: #FAEBD7;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+#backToTop {
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 15px;
+}
