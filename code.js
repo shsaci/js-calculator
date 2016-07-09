@@ -1,5 +1,7 @@
+// call the start function
 start();
 
+// find all elements with classname "buttons", and invoke 'addListener' function to them
 function start() {
   var x = document.getElementsByClassName("buttons");
   for (var i = 0; i < x.length; i++) {
@@ -7,18 +9,21 @@ function start() {
   }
 }
 
+// on element being clicked, call 'capture' function
 function addListeners(element) {
   element.addEventListener('click', capture);
 }
 
+// capture user input: which button is pressed
 function capture(element) {
   var input = element.target.innerHTML;
-  // console.log(input);
   screenDisplay(input);
 }
 
+// create variable output
 var output = null;
 
+// handle user input, including special cases and send to screen
 function screenDisplay(input) {
   if (input == 'Ans') {
     resolver(output);
@@ -31,7 +36,6 @@ function screenDisplay(input) {
 
   else if (input == 'CE') {
     var len = output.length; len--;
-    // console.log(output.length);
     output = output.slice(0, len);
   }
 
@@ -43,10 +47,10 @@ function screenDisplay(input) {
     output += input;
   }
 
-  // console.log(output);
   document.getElementById("screen").innerHTML = output;
 }
 
+// evaluate mathematical expression when user presses 'Ans' key
 function resolver(str) {
   if (str.length == 0) {
     result = 0;
