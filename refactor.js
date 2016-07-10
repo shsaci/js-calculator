@@ -1,3 +1,6 @@
+// start()
+document.addEventListener('DOMContentLoaded', start)
+
 // find all buttons on html page, and invoke addListener function on them
 function start() {
   var x = document.getElementsByClassName("buttons");
@@ -5,8 +8,6 @@ function start() {
     addListeners(x[i]);
   }
 }
-
-start();
 
 // listen for click events on all buttons, and call the capture function
 // if button clicked
