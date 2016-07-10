@@ -1,5 +1,5 @@
-// call the start function
-start();
+// start()
+document.addEventListener('DOMContentLoaded', start)
 
 // find all elements with classname "buttons", and invoke 'addListener' function to them
 function start() {
